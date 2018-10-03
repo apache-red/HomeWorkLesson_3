@@ -1,22 +1,29 @@
 public class RationalFraction {
 
-    private double y;
+    private double X;
+    private double Y;
+
+    public double getX() {
+        return X;
+    }
 
     public double getY() {
-        return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
+        return Y;
     }
 
 
+    public void getXandY(double X , double Y){
+        this.X = X;
+        System.out.println("X="+this.X);
+        this.Y = Y;
+        System.out.println("Y="+this.Y);
+    }
 
-
-    public  double createRationalFraction_1(double A, double x, double a) {
+    public  void createRationalFraction_1(double A, double x, double a) {
         System.out.println("Your rational fraction is: "+ A + " / "+x+ " - "+a);
         System.out.println("------------------------------");
-        return y = solutionRationalFraction_1(A, x, a);
+        getXandY(x, solutionRationalFraction_1(A, x, a));
+
     }
 
     private double solutionRationalFraction_1(double A, double x, double a){
@@ -26,43 +33,45 @@ public class RationalFraction {
 
 
     public  void createRationalFraction_2(double A, double x, double a, int n) {
-
         String str = "Your rational fraction is: : "+ A + " / "+"("+x+ " - "+a+")"+"^"+n;
         System.out.println("------------------------------");
-        solutionRationalFraction_2(A, x, a, n);
-
-
+        getXandY(x, solutionRationalFraction_2(A, x, a, n));
     }
 
-    private void solutionRationalFraction_2(double A, double x, double a1, int n) {
+    private double solutionRationalFraction_2(double A, double x, double a, int n) {
+        return A/ (Math.pow((x-a),n));
     }
 
 
-    public  void  createRationalFraction_3(double M, double x, double N, double p, double q) {
+    public  void   createRationalFraction_3(double M, double x, double N, double p, double q) {
 
         String str = "Your rational fraction is: : "+ M +"*"+x+"+"+N+ " / "+x+"^"+"2"+p+"*"+x+ "+"+q;
         System.out.println("------------------------------");
-        solutionRationalFraction_3(M, x, N, p, q);
+        getXandY(x, solutionRationalFraction_3(M, x, N, p, q));
 
 
     }
 
-    private void solutionRationalFraction_3(double M, double x, double N, double p, double q) {
+    private double solutionRationalFraction_3(double M, double x, double N, double p, double q) {
+        return ((M*x)+N) / ((Math.pow(x,2)) + (p*x)+q);
     }
 
 
-    public  void  createRationalFraction_4(double M, double x, double N, double p, double q, int n) {
+    public  void createRationalFraction_4(double M, double x, double N, double p, double q, int n) {
 
         String str = "Your rational fraction is: : "+ M +"*"+x+"+"+N+ " / "+"("+x+"^"+"2"+"+"+p+"*"+x+ "+"+q+")"+"^"+n;
         System.out.println("------------------------------");
-        solutionRationalFraction_4(M, x, N, p, q, n);
+        getXandY(x, solutionRationalFraction_4(M, x, N, p, q, n));
 
 
     }
 
-    private void solutionRationalFraction_4(double M, double x, double N, double p, double q, int n) {
-
+    private double solutionRationalFraction_4(double M, double x, double N, double p, double q, int n) {
+        return  ((M*x)+N) / (Math.pow(((Math.pow(x,2)) + (p*x)+q),n));
     }
+
+
+
 
 
 }
