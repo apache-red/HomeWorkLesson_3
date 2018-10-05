@@ -15,7 +15,8 @@ public class ShowTask {
         System.out.println("3. Select the type of rational fraction: M*x+N/x^2+px+q .");
         System.out.println("4. Select the type of rational fraction: M*x+N/(x^2+px+q)^n .");
         System.out.println("5. Draw all added shapes");
-        System.out.println("6. Stop program");
+        System.out.println("6. Get data on added circles");
+        System.out.println("7. Stop program");
         System.out.println("------------------------------");
 
     }

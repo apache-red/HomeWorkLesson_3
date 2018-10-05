@@ -70,9 +70,12 @@ public class Task_1 {
                 System.out.println("Draw all added shapes");
                 createPlate();
                 showPlate();
-
                 break;
             case 6:
+                System.out.println("Added data:");
+                getAllData();
+                break;
+            case 7:
                 System.out.println("Program was stopped");
                 System.exit(0);
         }
@@ -134,6 +137,34 @@ public class Task_1 {
     private void saveCircle(Circle circle) {
         listCircle.add(circle);
     }
+
+
+    private void getAllData(){
+
+
+        for (int i = 0; i <listCircle.size() ; i++) {
+            System.out.println("----");
+            System.out.println("Circle "+ i);
+            System.out.println("X ="+listCircle.get(i).getX());
+            System.out.println("Y ="+listCircle.get(i).getY());
+            System.out.println("Radius ="+listCircle.get(i).getR());
+            System.out.println("Area ="+listCircle.get(i).getS());
+            System.out.println("Perimetr ="+listCircle.get(i).getP());
+
+        }
+
+    }
+
+    private void  smallestAndLargestObj(){
+
+        for (int i = 0; i < listCircle.size() ; i++) {
+
+
+
+        }
+
+    }
+
 
 
 }
