@@ -34,34 +34,7 @@ public class WriteTask {
         return number;
     }
 
-    private void choseAction(int number){
-        switch(number) {
-            case 1:
-                System.out.println("Enter number A, x, a");
-                System.out.println("--------------------------");
-              //  System.out.println(createRationalFraction_1(writeAction(), writeAction(), writeAction()));
-                break;
-            case 2:
-                System.out.println("Enter number A, x, a, n");
-                System.out.println("--------------------------");
-              //  System.out.println(createRationalFraction_1(writeAction(), writeAction(), writeAction(), writeAction()));
-                break;
-            case 3:
-                System.out.println("Enter number A * B");
-                System.out.println("--------------------------");
-             //   System.out.println(createRationalFraction_1(writeAction(), writeAction(), writeAction()));
-                break;
-            case 4:
-                System.out.println("Enter number A / B");
-                System.out.println("--------------------------");
-             //   System.out.println(createRationalFraction_1(writeAction(), writeAction(), writeAction()));
-                break;
-            case 5:
-                System.out.println("Program was stopped");
-                System.exit(0);
-        }
-       // start();
-    }
+
 
 
 }
